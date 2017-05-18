@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Hello, I'm Mike Harsch and this is my blog.  Topics here will include IoT
+(Internet of Things), distributed computing, computer architecture, networking,
+parallel computing, robotics, electronics, and computer science education.  I
+hope you will find the content useful (at best) or at least amusing.

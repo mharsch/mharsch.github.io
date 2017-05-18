@@ -36,3 +36,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
 highlighter: rouge
+google_analytics: UA-69340128-2
+
