@@ -13,7 +13,7 @@ tags:
   - L2ARC
   - zfs
 ---
-Three years ago, Neelakanth Nadgir <a href="https://blogs.oracle.com/realneel/entry/zfs_arc_statistics" target="_blank" class="broken_link">released arcstat.pl</a>: a Perl script that prints ZFS ARC statistics in a vmstat-like fashion.  I found this tool to be very useful, but it was missing support for L2ARC statistics (the [L2ARC](http://dtrace.org/blogs/brendan/2008/07/22/zfs-l2arc/) hadn&#8217;t been invented yet).  With neel&#8217;s permission, I&#8217;ve <a href="http://github.com/mharsch/arcstat" target="_blank">updated arcstat.pl</a> to support L2ARC statistics.  Now it can be used to view ARC and L2ARC data side-by-side: providing a more complete view of ZFS caching performance on a system configured with L2ARC devices.
+Three years ago, Neelakanth Nadgir released arcstat.pl: a Perl script that prints ZFS ARC statistics in a vmstat-like fashion.  I found this tool to be very useful, but it was missing support for L2ARC statistics (the [L2ARC](https://www.brendangregg.com/blog/2008-07-22/zfs-l2arc.html) hadn&#8217;t been invented yet).  With neel&#8217;s permission, I&#8217;ve <a href="http://github.com/mharsch/arcstat" target="_blank">updated arcstat.pl</a> to support L2ARC statistics.  Now it can be used to view ARC and L2ARC data side-by-side: providing a more complete view of ZFS caching performance on a system configured with L2ARC devices.
 
 Let&#8217;s say I&#8217;m interested in watching the following stats over time:
 
@@ -83,4 +83,4 @@ More time passes&#8230; As the ARC churns, it&#8217;s hit ratio drops because it
       4K    3K   649    86     649     590      59      90     1G      3G
     
 
-I&#8217;ve found this tool (used along with &#8216;iostat&#8217; or &#8216;zpool iostat -v&#8217;) to be a nice way to get a feel for how the ARC + L2ARC are performing. It will definitely give you a feel for how long the L2ARC takes to warm-up for your workload. The above examples were snipped from a timespan of 2 hours while compiling the [illumos gate](https://www.illumos.org/projects/illumos-gate/wiki).
+I&#8217;ve found this tool (used along with &#8216;iostat&#8217; or &#8216;zpool iostat -v&#8217;) to be a nice way to get a feel for how the ARC + L2ARC are performing. It will definitely give you a feel for how long the L2ARC takes to warm-up for your workload. The above examples were snipped from a timespan of 2 hours while compiling the [illumos gate](https://www.illumos.org/projects/illumos-gate).
